@@ -5,3 +5,4 @@
 /main.onefile-build
 /tests
 /__pycache__
+/.gitignore
