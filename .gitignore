@@ -1,0 +1,7 @@
+/.venv
+/.vscode
+/main.build
+/main.dist
+/main.onefile-build
+/tests
+/__pycache__
