@@ -1,0 +1,2145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1003</width>
+    <height>733</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="headwidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(30, 31, 34);
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>6</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>Showcard Gothic</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(208, 208, 208);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="images.qrc">:/img/icon20.png</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QToolButton" name="minimize_btn">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/img/_.png</normaloff>:/img/_.png</iconset>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="close_btn">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset resource="images.qrc">
+           <normaloff>:/img/х.png</normaloff>:/img/х.png</iconset>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="body_widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(43, 45, 49);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <property name="leftMargin">
+        <number>1</number>
+       </property>
+       <property name="topMargin">
+        <number>1</number>
+       </property>
+       <property name="rightMargin">
+        <number>1</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>1</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="spacing">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="index_page_btn">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+  	background-color: rgb(36, 36, 37);
+	color: rgb(185, 185, 185);
+    padding: 2px;
+	border: 1px solid rgba(65, 65, 65, 100);
+	border-radius: 1px;
+	height: 23px;
+	min-width: 100px;
+	font: 900 10pt &quot;Segoe UI Black&quot;;
+}
+
+
+QPushButton:hover
+{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.0341364, x2:1, y2:1, stop:0 rgba(0, 0, 0, 66), stop:1 rgba(37, 33, 33, 255));
+	color: rgb(162, 162, 69);
+}
+
+
+QPushButton:disabled {
+		background-color: rgb(50, 50, 50);
+        color: #888;
+        border: 1px solid rgba(100, 100, 100, 100);
+    }</string>
+             </property>
+             <property name="text">
+              <string>Главная</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="settings_page_btn">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+  	background-color: rgb(36, 36, 37);
+	color: rgb(185, 185, 185);
+    padding: 2px;
+	border: 1px solid rgba(65, 65, 65, 100);
+	border-radius: 1px;
+	height: 23px;
+	min-width: 100px;
+	font: 900 10pt &quot;Segoe UI Black&quot;;
+}
+
+
+QPushButton:hover
+{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.0341364, x2:1, y2:1, stop:0 rgba(0, 0, 0, 66), stop:1 rgba(37, 33, 33, 255));
+	color: rgb(162, 162, 69);
+}
+
+
+QPushButton:disabled {
+		background-color: rgb(50, 50, 50);
+        color: #888;
+        border: 1px solid rgba(100, 100, 100, 100);
+    }</string>
+             </property>
+             <property name="text">
+              <string>Настройки</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="stat_page_btn">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+  	background-color: rgb(36, 36, 37);
+	color: rgb(185, 185, 185);
+    padding: 2px;
+	border: 1px solid rgba(65, 65, 65, 100);
+	border-radius: 1px;
+	height: 23px;
+	min-width: 100px;
+	font: 900 10pt &quot;Segoe UI Black&quot;;
+}
+
+
+QPushButton:hover
+{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.0341364, x2:1, y2:1, stop:0 rgba(0, 0, 0, 66), stop:1 rgba(37, 33, 33, 255));
+	color: rgb(162, 162, 69);
+}
+
+
+QPushButton:disabled {
+		background-color: rgb(50, 50, 50);
+        color: #888;
+        border: 1px solid rgba(100, 100, 100, 100);
+    }</string>
+             </property>
+             <property name="text">
+              <string>Статистика</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="payment_page_btn">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+  	background-color: rgb(36, 36, 37);
+	color: rgb(185, 185, 185);
+    padding: 2px;
+	border: 1px solid rgba(65, 65, 65, 100);
+	border-radius: 1px;
+	height: 23px;
+	min-width: 100px;
+	font: 900 10pt &quot;Segoe UI Black&quot;;
+}
+
+
+QPushButton:hover
+{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.0341364, x2:1, y2:1, stop:0 rgba(0, 0, 0, 66), stop:1 rgba(37, 33, 33, 255));
+	color: rgb(162, 162, 69);
+}
+
+
+QPushButton:disabled {
+		background-color: rgb(50, 50, 50);
+        color: #888;
+        border: 1px solid rgba(100, 100, 100, 100);
+    }</string>
+             </property>
+             <property name="text">
+              <string>Запросы</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="users_page_btn">
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+  	background-color: rgb(36, 36, 37);
+	color: rgb(185, 185, 185);
+    padding: 2px;
+	border: 1px solid rgba(65, 65, 65, 100);
+	border-radius: 1px;
+	height: 23px;
+	min-width: 100px;
+	font: 900 10pt &quot;Segoe UI Black&quot;;
+}
+
+
+QPushButton:hover
+{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.0341364, x2:1, y2:1, stop:0 rgba(0, 0, 0, 66), stop:1 rgba(37, 33, 33, 255));
+	color: rgb(162, 162, 69);
+}
+
+
+QPushButton:disabled {
+		background-color: rgb(50, 50, 50);
+        color: #888;
+        border: 1px solid rgba(100, 100, 100, 100);
+    }</string>
+             </property>
+             <property name="text">
+              <string>Пользователи</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTabWidget" name="tabWidget">
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTabWidget::pane {
+border: 1px solid rgb(72, 72, 72);
+border-top: 0px;
+border-right: 0px;
+border-bottom: 0px;
+background: rgb(245, 245, 245);;
+}
+
+QTabBar::tab { height: 0; width: 0; margin: 0; padding: 0; }
+
+QTabBar::tab:selected {
+background: rgb(50, 50, 50);
+margin-bottom: -1px;
+font: 900 9pt &quot;Segoe UI Black&quot;;
+}</string>
+           </property>
+           <property name="tabPosition">
+            <enum>QTabWidget::North</enum>
+           </property>
+           <property name="tabShape">
+            <enum>QTabWidget::Rounded</enum>
+           </property>
+           <property name="currentIndex">
+            <number>4</number>
+           </property>
+           <property name="usesScrollButtons">
+            <bool>false</bool>
+           </property>
+           <property name="documentMode">
+            <bool>false</bool>
+           </property>
+           <property name="tabsClosable">
+            <bool>false</bool>
+           </property>
+           <property name="movable">
+            <bool>false</bool>
+           </property>
+           <property name="tabBarAutoHide">
+            <bool>false</bool>
+           </property>
+           <widget class="QWidget" name="index_page">
+            <attribute name="title">
+             <string>Главная</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QLabel" name="page_name_index">
+               <property name="font">
+                <font>
+                 <pointsize>14</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(170, 255, 0);</string>
+               </property>
+               <property name="text">
+                <string>Новости</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextBrowser" name="textBrowser">
+               <property name="styleSheet">
+                <string notr="true">QTextBrowser {
+	
+	color: rgb(191, 191, 95);
+	border: 0px solid rgb(72, 72, 72);
+	padding-left: 5px;
+	max-height: 120px;
+	min-height: 120px;
+}
+
+QScrollArea {
+border: 0px solid rgb(72, 72, 72);
+}
+
+
+QScrollBar:horizontal
+    {
+        height: 15px;
+        margin: 3px 15px 3px 15px;
+        border: 1px transparent #2A2929;
+        border-radius: 4px;
+        background-color: yellow;    /* #2A2929; */
+    }
+
+    QScrollBar::handle:horizontal
+    {
+        background-color: blue;      /* #605F5F; */
+        min-width: 5px;
+        border-radius: 4px;
+    }
+
+    QScrollBar::add-line:horizontal
+    {
+        margin: 0px 3px 0px 3px;
+        border-image: url(:/qss_icons/rc/right_arrow_disabled.png);
+        width: 10px;
+        height: 10px;
+        subcontrol-position: right;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::sub-line:horizontal
+    {
+        margin: 0px 3px 0px 3px;
+        border-image: url(:/qss_icons/rc/left_arrow_disabled.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: left;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:horizontal:hover,QScrollBar::add-line:horizontal:on
+    {
+        border-image: url(:/qss_icons/rc/right_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: right;
+        subcontrol-origin: margin;
+    }
+
+
+    QScrollBar::sub-line:horizontal:hover, QScrollBar::sub-line:horizontal:on
+    {
+        border-image: url(:/qss_icons/rc/left_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: left;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+    {
+        background: none;
+    }
+
+
+    QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+    {
+        background: none;
+    }
+
+    QScrollBar:vertical
+    {
+        background-color: #2A2929;
+        width: 15px;
+        margin: 15px 3px 15px 3px;
+        border: 1px transparent #2A2929;
+        border-radius: 4px;
+    }
+
+    QScrollBar::handle:vertical
+    {
+        
+		background-color: rgb(88, 88, 88);
+        min-height: 5px;
+        border-radius: 4px;
+    }
+
+    QScrollBar::sub-line:vertical
+    {
+        margin: 3px 0px 3px 0px;
+        border-image: url(:/qss_icons/rc/up_arrow_disabled.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: top;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:vertical
+    {
+        margin: 3px 0px 3px 0px;
+        border-image: url(:/qss_icons/rc/down_arrow_disabled.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::sub-line:vertical:hover,QScrollBar::sub-line:vertical:on
+    {
+        border-image: url(:/qss_icons/rc/up_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: top;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:on
+    {
+        border-image: url(:/qss_icons/rc/down_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical
+    {
+        background: none;
+    }
+
+    QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+    {
+        background: none;
+    }</string>
+               </property>
+               <property name="html">
+                <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Добавлен вывод новостей&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Добавлены оповещения на рабочий стол, пока что не реализованы в приложении&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Добавлено переключение по страницам&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Добавлена настройка расположения оповещений&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;* Добавлена возможность создания/отменения заявок черед дискорд&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>347</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="settings_page">
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <attribute name="title">
+             <string>Настройки</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <item>
+              <widget class="QGroupBox" name="groupBox">
+               <property name="mouseTracking">
+                <bool>false</bool>
+               </property>
+               <property name="toolTipDuration">
+                <number>-1</number>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QGroupBox {
+    font: bold;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 6px;
+    margin-top:10px;
+ 
+	color: rgb(255, 255, 255);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 71px;
+    padding: 0px 5px 0px 5px;
+}</string>
+               </property>
+               <property name="title">
+                <string>Оповещения для рабочего стола</string>
+               </property>
+               <property name="flat">
+                <bool>false</bool>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <layout class="QGridLayout" name="gridLayout">
+                <property name="topMargin">
+                 <number>9</number>
+                </property>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="label_4">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(110, 163, 81);</string>
+                  </property>
+                  <property name="text">
+                   <string>Монитор</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QComboBox" name="comboBox_2">
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">/* Главный бокс  */
+QComboBox {
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 5px;
+    padding: 8px 18px 8px 10px;
+    min-width: 6em;
+    color: rgb(208, 208, 208);
+}
+
+/* развернутый список  */
+QComboBox QAbstractItemView {
+     border: 4px solid rgb(45, 45, 45);
+     color: rgb(208, 208, 208);
+ }
+
+QComboBox:editable {
+    background-color: rgb(163, 163, 163);
+    color: rgb(208, 208, 208);
+}
+
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+    background-color: rgb(36, 36, 37);
+
+}
+
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background-color: rgb(36, 36, 37);
+	color: rgb(208, 208, 208);
+padding: 8px 18px 8px 10px;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+
+/* Стрелка свернутого меню */
+QComboBox::drop-down {
+    width: 15px;
+	padding-right:5px;
+    border-top-right-radius: 3px; 
+    border-bottom-right-radius: 3px;
+}
+
+
+/* Стрелка свернутого меню */
+QComboBox::down-arrow {
+    image: url(:/img/444.png)
+}
+ /* Стрелка развернутого меню */
+QComboBox::down-arrow:on {
+	image: url(:/img/555.png);
+}</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_3">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(110, 163, 81);</string>
+                  </property>
+                  <property name="text">
+                   <string>Расположение</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QComboBox" name="comboBox">
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">/* Главный бокс  */
+QComboBox {
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 5px;
+    padding: 8px 18px 8px 10px;
+    min-width: 6em;
+    color: rgb(208, 208, 208);
+}
+
+/* развернутый список  */
+QComboBox QAbstractItemView {
+     border: 4px solid rgb(45, 45, 45);
+     color: rgb(208, 208, 208);
+ }
+
+QComboBox:editable {
+    background-color: rgb(163, 163, 163);
+    color: rgb(208, 208, 208);
+}
+
+
+QComboBox:!editable, QComboBox::drop-down:editable {
+    background-color: rgb(36, 36, 37);
+
+}
+
+
+/* QComboBox gets the &quot;on&quot; state when the popup is open */
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+    background-color: rgb(36, 36, 37);
+	color: rgb(208, 208, 208);
+padding: 8px 18px 8px 10px;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+
+/* Стрелка свернутого меню */
+QComboBox::drop-down {
+    width: 15px;
+	padding-right:5px;
+    border-top-right-radius: 3px; 
+    border-bottom-right-radius: 3px;
+}
+
+
+/* Стрелка свернутого меню */
+QComboBox::down-arrow {
+    image: url(:/img/444.png)
+}
+ /* Стрелка развернутого меню */
+QComboBox::down-arrow:on {
+	image: url(:/img/555.png);
+}</string>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>bottom-right</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>top-right</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>left-top</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>left-bottom</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QPushButton" name="pushButton">
+                  <property name="maximumSize">
+                   <size>
+                    <width>167</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton
+{
+  	background-color: rgb(36, 36, 37);
+	color: rgb(185, 185, 185);
+    padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(50, 50, 50);
+	border-radius: 2px;
+	height: 23px;
+	min-width: 100px;
+	font: 900 10pt &quot;Segoe UI Black&quot;;
+}
+
+
+QPushButton:hover
+{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.0341364, x2:1, y2:1, stop:0 rgba(0, 0, 0, 66), stop:1 rgba(37, 33, 33, 255));
+	color: rgb(162, 162, 69);
+}
+
+
+QPushButton:disabled {
+        
+		
+		background-color: rgb(50, 50, 50);
+        color: #888;
+        border: 1px solid #888;
+    }</string>
+                  </property>
+                  <property name="text">
+                   <string>Проверка</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_2">
+               <property name="styleSheet">
+                <string notr="true">QGroupBox {
+    font: bold;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 6px;
+    margin-top:10px;
+ 
+	color: rgb(255, 255, 255);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 71px;
+    padding: 0px 5px 0px 5px;
+}</string>
+               </property>
+               <property name="title">
+                <string>Ключ доступа</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_2">
+                <property name="horizontalSpacing">
+                 <number>1</number>
+                </property>
+                <property name="verticalSpacing">
+                 <number>5</number>
+                </property>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_5">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(110, 163, 81);</string>
+                  </property>
+                  <property name="text">
+                   <string>Введите ключ</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="3">
+                 <widget class="QPushButton" name="pushButton_2">
+                  <property name="maximumSize">
+                   <size>
+                    <width>167</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton
+{
+  	background-color: rgb(36, 36, 37);
+	color: rgb(185, 185, 185);
+    padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(50, 50, 50);
+	border-radius: 2px;
+	height: 23px;
+	min-width: 100px;
+	font: 900 10pt &quot;Segoe UI Black&quot;;
+}
+
+
+QPushButton:hover
+{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.0341364, x2:1, y2:1, stop:0 rgba(0, 0, 0, 66), stop:1 rgba(37, 33, 33, 255));
+	color: rgb(162, 162, 69);
+}
+
+
+QPushButton:disabled {
+        
+		
+		background-color: rgb(50, 50, 50);
+        color: #888;
+        border: 1px solid #888;
+    }</string>
+                  </property>
+                  <property name="text">
+                   <string>Готово</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0" colspan="3">
+                 <widget class="QLineEdit" name="lineEdit">
+                  <property name="maximumSize">
+                   <size>
+                    <width>669</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 3px;
+	margin-top:1px;
+	margin-bottom:3px;
+    padding: 8 8px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(56, 58, 64);
+	selection-background-color: rgb(111, 165, 82);
+	font: 900 9pt &quot;Segoe UI Black&quot;;
+}</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="label_7">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(216, 216, 216);</string>
+                  </property>
+                  <property name="text">
+                   <string>RT_jSidC9viIgmuLSFbud4wXk0h7xUBNqyNvAdszQSsMZPyvE</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0" colspan="4">
+                 <widget class="Line" name="line">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_6">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(216, 216, 216);</string>
+                  </property>
+                  <property name="lineWidth">
+                   <number>1</number>
+                  </property>
+                  <property name="text">
+                   <string>Текущий ключ:</string>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>false</bool>
+                  </property>
+                  <property name="indent">
+                   <number>-1</number>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QLabel" name="label_8">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(216, 216, 216);</string>
+                  </property>
+                  <property name="text">
+                   <string>Осталось 31 день</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_3">
+               <property name="styleSheet">
+                <string notr="true">QGroupBox {
+    font: bold;
+    border: 1px solid rgb(50, 50, 50);
+    border-radius: 6px;
+    margin-top:10px;
+ 
+	color: rgb(255, 255, 255);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 71px;
+    padding: 0px 5px 0px 5px;
+}</string>
+               </property>
+               <property name="title">
+                <string>Настройки бота Discord</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <widget class="QLabel" name="label_10">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(110, 163, 81);</string>
+                  </property>
+                  <property name="text">
+                   <string>API Token</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_2">
+                    <property name="maximumSize">
+                     <size>
+                      <width>669</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                      <pointsize>9</pointsize>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QLineEdit {
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 3px;
+	margin-top:1px;
+	margin-bottom:3px;
+    padding: 8 8px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(56, 58, 64);
+	selection-background-color: rgb(111, 165, 82);
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_3">
+                    <property name="maximumSize">
+                     <size>
+                      <width>167</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton
+{
+  	background-color: rgb(36, 36, 37);
+	color: rgb(185, 185, 185);
+    padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(50, 50, 50);
+	border-radius: 2px;
+	height: 23px;
+	min-width: 100px;
+	font: 900 10pt &quot;Segoe UI Black&quot;;
+}
+
+
+QPushButton:hover
+{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.0341364, x2:1, y2:1, stop:0 rgba(0, 0, 0, 66), stop:1 rgba(37, 33, 33, 255));
+	color: rgb(162, 162, 69);
+}
+
+
+QPushButton:disabled {
+        
+		
+		background-color: rgb(50, 50, 50);
+        color: #888;
+        border: 1px solid #888;
+    }</string>
+                    </property>
+                    <property name="text">
+                     <string>Изменить</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_5">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_10">
+                    <property name="spacing">
+                     <number>2</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="label_9">
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(110, 163, 81);</string>
+                      </property>
+                      <property name="text">
+                       <string>Описание бота</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QTextEdit" name="textEdit">
+                      <property name="font">
+                       <font>
+                        <family>Segoe UI</family>
+                        <pointsize>9</pointsize>
+                        <italic>false</italic>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QTextEdit {
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 3px;
+	margin-top:1px;
+	margin-bottom:3px;
+    padding: 8 8px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(56, 58, 64);
+	selection-background-color: rgb(111, 165, 82);
+}</string>
+                      </property>
+                      <property name="html">
+                       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Список комманд:&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;/help - помощь&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;/setpayment &amp;lt;number&amp;gt; - Добавить карту для оплат&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;/pay &amp;lt;summ&amp;gt; &amp;lt;desc&amp;gt; - запросить оплату&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;/about - Ифнормация о моем счете&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_5">
+                      <property name="cursor">
+                       <cursorShape>PointingHandCursor</cursorShape>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QPushButton
+{
+  	background-color: rgb(36, 36, 37);
+	color: rgb(185, 185, 185);
+    padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(50, 50, 50);
+	border-radius: 2px;
+	height: 23px;
+	min-width: 100px;
+	font: 900 10pt &quot;Segoe UI Black&quot;;
+}
+
+
+QPushButton:hover
+{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.0341364, x2:1, y2:1, stop:0 rgba(0, 0, 0, 66), stop:1 rgba(37, 33, 33, 255));
+	color: rgb(162, 162, 69);
+}
+
+
+QPushButton:disabled {
+        
+		
+		background-color: rgb(50, 50, 50);
+        color: #888;
+        border: 1px solid #888;
+    }</string>
+                      </property>
+                      <property name="text">
+                       <string>Запуск</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="stat_page">
+            <attribute name="title">
+             <string>Статистика</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <widget class="QWidget" name="widget_2" native="true">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(185, 185, 185);
+font: 900 10pt &quot;Segoe UI Black&quot;;</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_11">
+                <item>
+                 <widget class="QLabel" name="label_11">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI Black</family>
+                    <pointsize>10</pointsize>
+                    <italic>false</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Не выплачено: 2333 руб</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_12">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI Black</family>
+                    <pointsize>10</pointsize>
+                    <italic>false</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Пользователей: 5</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_13">
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI Black</family>
+                    <pointsize>10</pointsize>
+                    <italic>false</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Всего запросов: 23</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="payment_page">
+            <attribute name="title">
+             <string>Запросы на выплату</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_3">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 3px;
+	margin-top:1px;
+	margin-bottom:3px;
+    padding: 8 8px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(56, 58, 64);
+	selection-background-color: rgb(111, 165, 82);
+	font: 900 9pt &quot;Segoe UI Black&quot;;
+}</string>
+               </property>
+               <property name="placeholderText">
+                <string>Поиск по нику</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_6">
+                <property name="spacing">
+                 <number>1</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_4">
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 3px;
+	margin-top:1px;
+	margin-bottom:3px;
+    padding: 8 8px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(56, 58, 64);
+	selection-background-color: rgb(111, 165, 82);
+	font: 900 9pt &quot;Segoe UI Black&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Senbry</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Ник</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_6">
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 3px;
+	margin-top:1px;
+	margin-bottom:3px;
+    padding: 8 8px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(56, 58, 64);
+	selection-background-color: rgb(111, 165, 82);
+	font: 900 9pt &quot;Segoe UI Black&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>500</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Сумма</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_5">
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit {
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 3px;
+	margin-top:1px;
+	margin-bottom:3px;
+    padding: 8 8px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(56, 58, 64);
+	selection-background-color: rgb(111, 165, 82);
+	font: 900 9pt &quot;Segoe UI Black&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>20 key x 2</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>Описание</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_4">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton
+{
+  	background-color: rgb(36, 36, 37);
+	color: rgb(185, 185, 185);
+    padding: 2px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(50, 50, 50);
+	border-radius: 2px;
+	height: 30px;
+	min-width: 100px;
+	font: 900 10pt &quot;Segoe UI Black&quot;;
+}
+
+
+QPushButton:hover
+{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.0341364, x2:1, y2:1, stop:0 rgba(0, 0, 0, 66), stop:1 rgba(37, 33, 33, 255));
+	color: rgb(162, 162, 69);
+}
+
+
+QPushButton:disabled {
+        
+		
+		background-color: rgb(50, 50, 50);
+        color: #888;
+        border: 1px solid #888;
+    }</string>
+                  </property>
+                  <property name="text">
+                   <string>Добавить</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QListWidget" name="listWidget">
+               <property name="styleSheet">
+                <string notr="true">QScrollArea {
+border: 0px solid rgb(72, 72, 72);
+}
+
+
+QScrollBar:horizontal
+    {
+        height: 15px;
+        margin: 3px 15px 3px 15px;
+        border: 1px transparent #2A2929;
+        border-radius: 4px;
+        background-color: yellow;    /* #2A2929; */
+    }
+
+    QScrollBar::handle:horizontal
+    {
+        background-color: blue;      /* #605F5F; */
+        min-width: 5px;
+        border-radius: 4px;
+    }
+
+    QScrollBar::add-line:horizontal
+    {
+        margin: 0px 3px 0px 3px;
+        border-image: url(:/qss_icons/rc/right_arrow_disabled.png);
+        width: 10px;
+        height: 10px;
+        subcontrol-position: right;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::sub-line:horizontal
+    {
+        margin: 0px 3px 0px 3px;
+        border-image: url(:/qss_icons/rc/left_arrow_disabled.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: left;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:horizontal:hover,QScrollBar::add-line:horizontal:on
+    {
+        border-image: url(:/qss_icons/rc/right_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: right;
+        subcontrol-origin: margin;
+    }
+
+
+    QScrollBar::sub-line:horizontal:hover, QScrollBar::sub-line:horizontal:on
+    {
+        border-image: url(:/qss_icons/rc/left_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: left;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+    {
+        background: none;
+    }
+
+
+    QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+    {
+        background: none;
+    }
+
+    QScrollBar:vertical
+    {
+        background-color: #2A2929;
+        width: 15px;
+        margin: 15px 3px 15px 3px;
+        border: 1px transparent #2A2929;
+        border-radius: 4px;
+    }
+
+    QScrollBar::handle:vertical
+    {
+        
+		background-color: rgb(88, 88, 88);
+        min-height: 5px;
+        border-radius: 4px;
+    }
+
+    QScrollBar::sub-line:vertical
+    {
+        margin: 3px 0px 3px 0px;
+        border-image: url(:/qss_icons/rc/up_arrow_disabled.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: top;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:vertical
+    {
+        margin: 3px 0px 3px 0px;
+        border-image: url(:/qss_icons/rc/down_arrow_disabled.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::sub-line:vertical:hover,QScrollBar::sub-line:vertical:on
+    {
+        border-image: url(:/qss_icons/rc/up_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: top;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:on
+    {
+        border-image: url(:/qss_icons/rc/down_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical
+    {
+        background: none;
+    }
+
+    QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+    {
+        background: none;
+    }
+QListWidget {
+border: 0px;
+}</string>
+               </property>
+               <property name="movement">
+                <enum>QListView::Static</enum>
+               </property>
+               <property name="spacing">
+                <number>1</number>
+               </property>
+               <property name="gridSize">
+                <size>
+                 <width>0</width>
+                 <height>33</height>
+                </size>
+               </property>
+               <property name="currentRow">
+                <number>-1</number>
+               </property>
+               <property name="sortingEnabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="users_page">
+            <attribute name="title">
+             <string>Пользователи</string>
+            </attribute>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_7">
+               <property name="styleSheet">
+                <string notr="true">QLineEdit {
+    border: 1px solid rgb(45, 45, 45);
+    border-radius: 3px;
+	margin-top:1px;
+	margin-bottom:3px;
+    padding: 8 8px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(56, 58, 64);
+	selection-background-color: rgb(111, 165, 82);
+	font: 900 9pt &quot;Segoe UI Black&quot;;
+}</string>
+               </property>
+               <property name="placeholderText">
+                <string>Поиск по нику</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QListWidget" name="UsersListWidget">
+               <property name="styleSheet">
+                <string notr="true">QListWidget { border: 0px; }
+QListView::item { height: 32px; }
+
+
+QScrollArea {
+border: 0px solid rgb(72, 72, 72);
+}
+
+
+QScrollBar:horizontal
+    {
+        height: 15px;
+        margin: 3px 15px 3px 15px;
+        border: 1px transparent #2A2929;
+        border-radius: 4px;
+        background-color: yellow;    /* #2A2929; */
+    }
+
+    QScrollBar::handle:horizontal
+    {
+        background-color: blue;      /* #605F5F; */
+        min-width: 5px;
+        border-radius: 4px;
+    }
+
+    QScrollBar::add-line:horizontal
+    {
+        margin: 0px 3px 0px 3px;
+        border-image: url(:/qss_icons/rc/right_arrow_disabled.png);
+        width: 10px;
+        height: 10px;
+        subcontrol-position: right;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::sub-line:horizontal
+    {
+        margin: 0px 3px 0px 3px;
+        border-image: url(:/qss_icons/rc/left_arrow_disabled.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: left;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:horizontal:hover,QScrollBar::add-line:horizontal:on
+    {
+        border-image: url(:/qss_icons/rc/right_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: right;
+        subcontrol-origin: margin;
+    }
+
+
+    QScrollBar::sub-line:horizontal:hover, QScrollBar::sub-line:horizontal:on
+    {
+        border-image: url(:/qss_icons/rc/left_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: left;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+    {
+        background: none;
+    }
+
+
+    QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+    {
+        background: none;
+    }
+
+    QScrollBar:vertical
+    {
+        background-color: #2A2929;
+        width: 15px;
+        margin: 15px 3px 15px 3px;
+        border: 1px transparent #2A2929;
+        border-radius: 4px;
+    }
+
+    QScrollBar::handle:vertical
+    {
+        
+		background-color: rgb(88, 88, 88);
+        min-height: 5px;
+        border-radius: 4px;
+    }
+
+    QScrollBar::sub-line:vertical
+    {
+        margin: 3px 0px 3px 0px;
+        border-image: url(:/qss_icons/rc/up_arrow_disabled.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: top;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:vertical
+    {
+        margin: 3px 0px 3px 0px;
+        border-image: url(:/qss_icons/rc/down_arrow_disabled.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::sub-line:vertical:hover,QScrollBar::sub-line:vertical:on
+    {
+        border-image: url(:/qss_icons/rc/up_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: top;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:on
+    {
+        border-image: url(:/qss_icons/rc/down_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical
+    {
+        background: none;
+    }
+
+    QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+    {
+        background: none;
+    }</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTextBrowser" name="log_browser">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTextBrowser {
+	color: rgb(170, 255, 0);
+	border: 1px solid rgb(72, 72, 72);
+	padding-left: 5px;
+	max-height: 120px;
+	min-height: 120px;
+}
+
+QScrollArea {
+border: 0px solid rgb(72, 72, 72);
+}
+
+
+QScrollBar:horizontal
+    {
+        height: 15px;
+        margin: 3px 15px 3px 15px;
+        border: 1px transparent #2A2929;
+        border-radius: 4px;
+        background-color: yellow;    /* #2A2929; */
+    }
+
+    QScrollBar::handle:horizontal
+    {
+        background-color: blue;      /* #605F5F; */
+        min-width: 5px;
+        border-radius: 4px;
+    }
+
+    QScrollBar::add-line:horizontal
+    {
+        margin: 0px 3px 0px 3px;
+        border-image: url(:/qss_icons/rc/right_arrow_disabled.png);
+        width: 10px;
+        height: 10px;
+        subcontrol-position: right;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::sub-line:horizontal
+    {
+        margin: 0px 3px 0px 3px;
+        border-image: url(:/qss_icons/rc/left_arrow_disabled.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: left;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:horizontal:hover,QScrollBar::add-line:horizontal:on
+    {
+        border-image: url(:/qss_icons/rc/right_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: right;
+        subcontrol-origin: margin;
+    }
+
+
+    QScrollBar::sub-line:horizontal:hover, QScrollBar::sub-line:horizontal:on
+    {
+        border-image: url(:/qss_icons/rc/left_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: left;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+    {
+        background: none;
+    }
+
+
+    QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+    {
+        background: none;
+    }
+
+    QScrollBar:vertical
+    {
+        background-color: #2A2929;
+        width: 15px;
+        margin: 15px 3px 15px 3px;
+        border: 1px transparent #2A2929;
+        border-radius: 4px;
+    }
+
+    QScrollBar::handle:vertical
+    {
+        
+		background-color: rgb(88, 88, 88);
+        min-height: 5px;
+        border-radius: 4px;
+    }
+
+    QScrollBar::sub-line:vertical
+    {
+        margin: 3px 0px 3px 0px;
+        border-image: url(:/qss_icons/rc/up_arrow_disabled.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: top;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:vertical
+    {
+        margin: 3px 0px 3px 0px;
+        border-image: url(:/qss_icons/rc/down_arrow_disabled.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::sub-line:vertical:hover,QScrollBar::sub-line:vertical:on
+    {
+        border-image: url(:/qss_icons/rc/up_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: top;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::add-line:vertical:hover, QScrollBar::add-line:vertical:on
+    {
+        border-image: url(:/qss_icons/rc/down_arrow.png);
+        height: 10px;
+        width: 10px;
+        subcontrol-position: bottom;
+        subcontrol-origin: margin;
+    }
+
+    QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical
+    {
+        background: none;
+    }
+
+    QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+    {
+        background: none;
+    }</string>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Segoe UI Black'; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="footerwidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(30, 31, 34);
+border-bottom-left-radius: 3px;
+border-bottom-right-radius: 3px;</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>115</width>
+           <height>19</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <family>Showcard Gothic</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(193, 151, 0);</string>
+         </property>
+         <property name="text">
+          <string>PAYBOT</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>114</width>
+           <height>19</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

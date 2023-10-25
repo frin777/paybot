@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserItemForm</class>
+ <widget class="QWidget" name="UserItemForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>656</width>
+    <height>32</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>32</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    border: 1px solid rgba(65, 65, 65, 100);
+    border-radius: 1px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(44, 44, 44, 100);
+	font: 900 9pt &quot;Segoe UI Black&quot;;
+}
+
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="nick_label">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border-right: 0px;
+padding-left: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Nickname</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="card_number_label">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>250</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+border-left: 0px;
+border-right: 0px;
+}</string>
+     </property>
+     <property name="text">
+      <string>CardNumber</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="bank_name_label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+border-left: 0px;
+border-right: 0px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Bank</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="balance_label">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-left: 0px;
+border-right: 0px;</string>
+     </property>
+     <property name="text">
+      <string>Balance</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>70</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+	
+	background-color: rgba(0, 53, 80, 100);
+	color: rgb(185, 185, 185);
+	border-left: 0px;
+	height: 30px;
+	font: 900 10pt &quot;Segoe UI Black&quot;;
+}
+
+
+QPushButton:hover
+{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.0341364, x2:1, y2:1, stop:0 rgba(0, 0, 0, 66), stop:1 rgba(37, 33, 33, 255));
+	color: rgb(162, 162, 69);
+}
+
+
+QPushButton:disabled {
+        
+		
+		background-color: rgb(50, 50, 50);
+        color: #888;
+        border: 1px solid #888;
+    }</string>
+     </property>
+     <property name="text">
+      <string>Оплачен</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="maximumSize">
+      <size>
+       <width>70</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+  	
+	
+	background-color: rgba(70, 0, 0, 100);
+	color: rgb(185, 185, 185);
+	border-left: 0px;
+	height: 30px;
+	font: 900 10pt &quot;Segoe UI Black&quot;;
+}
+
+
+QPushButton:hover
+{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.0341364, x2:1, y2:1, stop:0 rgba(0, 0, 0, 66), stop:1 rgba(37, 33, 33, 255));
+	color: rgb(162, 162, 69);
+}
+
+
+QPushButton:disabled {
+        
+		
+		background-color: rgb(50, 50, 50);
+        color: #888;
+        border: 1px solid #888;
+    }</string>
+     </property>
+     <property name="text">
+      <string>Бан</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

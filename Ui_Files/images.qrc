@@ -1,0 +1,26 @@
+<RCC>
+  <qresource prefix="img">
+    <file>msg3.png</file>
+    <file>msg1.png</file>
+    <file>msg.png</file>
+    <file>Succes.png</file>
+    <file>Warning.png</file>
+    <file>_.png</file>
+    <file>1.png</file>
+    <file>splash1.png</file>
+    <file>2.png</file>
+    <file>5.png</file>
+    <file>6.png</file>
+    <file>11.png</file>
+    <file>22.png</file>
+    <file>24.png</file>
+    <file>444.png</file>
+    <file>555.png</file>
+    <file>icon20.ico</file>
+    <file>icon20.png</file>
+    <file>х.png</file>
+  </qresource>
+  <qresource prefix="font">
+    <file>SHOWG.TTF</file>
+  </qresource>
+</RCC>
